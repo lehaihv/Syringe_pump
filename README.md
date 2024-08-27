@@ -32,7 +32,7 @@
 Notes:
    - Even this example is for ESP32 in particular, the library can be use with any other MCU that support C/C++.
    - Long delay() has been used here to make sure pump finish each command before sending the new ones. In a real application, function Get_Pump_Status() should be use to check if pump is ready for the new command.
-   - Due to the difference in voltage of logic level between ESP32 (UART 3.3V TTL) and PSD4 (RS232 Standard), a RS232 to TTL converter need to be to connect PSD4 pump communication cable with ESP32 UART port. Nulsom Ultra Compact RS232 to TTL converter was used here, but any other similar converter should work as well. 
+   - Due to the difference in voltage of logic level between ESP32 (UART 3.3V TTL) and PSD4 (RS232 Standard), an RS232 to TTL converter need to be used to connect PSD4 pump communication cable with ESP32 UART port. Nulsom Ultra Compact RS232 to TTL converter was used here, but any other similar converter should work as well. 
 
    - https://www.amazon.com/Ultra-Compact-RS232-Converter-1Mbps/dp/B074BMLM11/ref=asc_df_B074BMLM11/?tag=hyprod-20&linkCode=df0&hvadid=692875362841&hvpos=&hvnetw=g&hvrand=7150092486955832903&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9011699&hvtargid=pla-2281435177338&psc=1&mcid=9191b20cb01934a380221ffdeaa7c628&hvocijid=7150092486955832903-B074BMLM11-&hvexpln=73
    
