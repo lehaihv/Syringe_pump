@@ -8,16 +8,16 @@
     // Function to initialize the PSD4 Pump
     PSD4_PUMP(byte Pump_Addr, byte COM_Port, int COM_Speed, byte RX_Pin, byte TX_Pin); 
 
-    // Function to initiallize the Pump 1st time after it is power on / reset
+    // Function to set operation mode of the Pump
     void PSD4_PUMP::Init_Pump(byte operation_mode); 
 
-    // Function to set Port number (1 to 8) of Valve to 
+    // Function to set direction (Input/Output) of Port number (1 to 8) of the Valve 
     void PSD4_PUMP::Set_Port_Direction(byte Port_No, byte Port_Dir); 
 
-    // Function to move syringe up/down X step from current position
+    // Function to move syringe up/down No_of_Step steps from current position
     void PSD4_PUMP::Syringe_Move(byte Syringe_Dir, int No_of_Step);
 
-    // Function to move syringe to absolute position
+    // Function to move syringe to an absolute position
     void PSD4_PUMP::Syringe_Move_To_Position(int Absolute_position);
 
     // Function to set parameters of motor
