@@ -2,8 +2,9 @@
  Inculding library and a simple application allow ESP32 Devkit1c to control syringe pump PSD4
 
  ![alt text](2024-08-27-07-29-20-476-1.jpg)
- 
+
  Including functions:
+ 
     // Function to initialize the PSD4 Pump
     PSD4_PUMP(byte Pump_Addr, byte COM_Port, int COM_Speed, byte RX_Pin, byte TX_Pin); 
 
