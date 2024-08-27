@@ -4,7 +4,7 @@
  ![alt text](2024-08-27-07-29-20-476-1.jpg)
 
  Including functions:
- 
+
     // Function to initialize the PSD4 Pump
     PSD4_PUMP(byte Pump_Addr, byte COM_Port, int COM_Speed, byte RX_Pin, byte TX_Pin); 
 
@@ -30,6 +30,5 @@
     void PSD4_PUMP::Read_from_pump();
 
 Notes:
-   - Long delay() has been used here to make sure pump finish each command before sending the new ones.
-   - In a real application, function Get_Pump_Status() should be use to check if pump is ready for the new command.
+   - Long delay() has been used here to make sure pump finish each command before sending the new ones. In a real application, function Get_Pump_Status() should be use to check if pump is ready for the new command.
    - Even this example is for ESP32 in particular, the library can be use with any other MCU that support C/C++.
