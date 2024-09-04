@@ -89,7 +89,7 @@ void PSD4_PUMP::Set_Port_Direction(byte Port_No, byte Port_Dir)
 	temp[1] = Pump_Addr;
 	temp[2] = Sequence_data;
 	// Data to send
-	temp[3] = (Port_Dir == 0) ? 'O' : 'I';  // Direction of Port 
+	temp[3] = (Port_Dir == 1) ? 'O' : 'I';  // Direction of Port 
 	temp[4] = Port_No + 0x30; // Port number; from 1 to 8, to be set direction 
 	temp[5] = 'R';  // "R" executes the first unexecuted command in the command buffer.
 	// EXT byte
